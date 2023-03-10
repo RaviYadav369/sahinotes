@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Navigate to="/notes" />} />
         <Route path='/:type' element={<HomePage />} />
-        <Route path='/opennotes' element={<OpenNotes />} />
+        <Route path='/opennotes/:id' element={<OpenNotes />} />
         <Route path='/savednotes' element={<SavedNotesPage />} />
       </Routes>
     </>
