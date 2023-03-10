@@ -57,7 +57,7 @@ const NotesCard = () => {
                                 <div className='w-4/5 ml-3'>
                                     <p className='font-semibold text-sm'>{each.name}</p>
                                     <div className='mt-4'>
-                                        <p className='inline text-xs '>{each.views}</p>
+                                        <p className='inline text-xs mr-1'>{each.views}</p>
                                         <p className='inline text-xs'>{each.upload}</p>
                                     </div>
                                 </div>

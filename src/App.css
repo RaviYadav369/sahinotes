@@ -1,0 +1,12 @@
+.nav a.active {
+    border-bottom: 4px solid green;
+  }
+.nav a.inactive {
+    font-size: 600;
+  }
+.nav a.activeicon {
+    background-color: green;
+  }
+.nav a.inactiveicon {
+    background-color: gray;
+  }

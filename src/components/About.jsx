@@ -1,4 +1,5 @@
 import React from 'react'
+import NotesPageLayout from '../hoc/Notes-PageLayout'
 
 const About = () => {
   return (
@@ -6,4 +7,4 @@ const About = () => {
   )
 }
 
-export default About
+export default NotesPageLayout(About)

@@ -22,10 +22,10 @@ const OpenNotes = () => {
               <Link to='/notes'>
                 <IoIosArrowBack className='text-2xl font-semibold inline mr-4 mb-1' />
               </Link>
-              CIIZ Organic Chemistry Notes</h2>
+              {openNote.name} </h2>
           </div>
           <div className='rounded-2xl h-screen mt-7 m-4 mb-0 p-2 pb-0 '>
-            <img src='https://images.unsplash.com/photo-1586075574644-b6e4cb9df495?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTZ8fGE0JTIwc2l6ZSUyMHBhcGVyfGVufDB8fDB8fA%3D%3D' alt='notes Photo' className='h-full  w-full rounded-3xl' />
+            <img src={openNote.notesImg} alt='notes Photo' className='h-full  w-full rounded-3xl' />
           </div>
 
         </div>
@@ -37,7 +37,7 @@ const OpenNotes = () => {
             <div className='p-5 mt-4 flex justify-between w-3/5'>
               <p className='p-1 text-black'>
                 <BiLike className='text-2xl font-semibold text-black inline m-1 mb-1' />
-                56 Likes
+                {openNote.like} Likes
               </p>
               <p className='p-1 text-black'>
                 <BiShareAlt className='text-2xl font-semibold inline m-1 mb-1' />
@@ -49,10 +49,10 @@ const OpenNotes = () => {
             </div>
             <div className='flex mt-7'>
               <div className='w-2/12 ml-5'>
-                <img src='https://images-na.ssl-images-amazon.com/images/I/61Z1cfJJDcL._AC_UL900_SR615,900_.jpg' alt='aurthor Photo' className='h-12 w-12 rounded-full' />
+                <img src={openNote.authorImg} alt='aurthor Photo' className='h-12 w-12 rounded-full' />
               </div>
               <div className='w-2/4'>
-                <p className='font-semibold text-xl'>Om Khandade</p>
+                <p className='font-semibold text-xl'>{openNote.author}</p>
                 <p>GPA 10</p>
 
               </div>
@@ -69,7 +69,7 @@ const OpenNotes = () => {
             <div>
               <h2 className='text-2xl font-semibold p-5 mt-'>Resourses</h2>
               <div className='border-4 p-3 flex '>
-                <img src='https://images-na.ssl-images-amazon.com/images/I/61Z1cfJJDcL._AC_UL900_SR615,900_.jpg' alt='Resourses Photo' className='h-32' />
+                <img src={openNote.resourses} alt='Resourses Photo' className='h-32' />
                 <div className='w-3/4'>
                   <p className='font-semibold p-2 ml-2'>Wheeler's Dental Anatomy, Physiology and Occlusion, 1st South Asia Edition</p>
                   <button className='bg-yellow-500 text-white p-2 ml-14 mt-2 items-center rounded-xl'>Buy on Amazon</button>
