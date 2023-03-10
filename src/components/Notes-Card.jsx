@@ -42,12 +42,12 @@ const NotesCard = () => {
 
     return (
         <>
-            <div className='grid grid-rows-2 grid-cols-3 gap-3'>
+            <div className='grid grid-rows-2 lg:grid-cols-3 gap-3 md:grid-cols-2 grid-cols-1'>
                 {note.map((each, index) => (
                     <Link to={`/opennotes/${each.id}`} key={index} >
-                        <div className='p-3 border relative '>
+                        <div className='sm:p-3 p-1 border relative '>
                             <div className='absolute h-full w-full  '>
-                                <div className='bg-black w-5 text-sm p-[1px] left-[87px] top-[132px] absolute text-white'>{each.pages}</div>
+                                <div className='bg-black w-5  text-sm p-[1px] left-[86px] top-[132px] absolute text-white'>{each.pages}</div>
                                 <FcOk className='absolute top-28 right-7' />
                             </div>
                             <div className='flex justify-between'>

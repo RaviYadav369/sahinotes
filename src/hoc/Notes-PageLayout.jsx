@@ -6,14 +6,14 @@ import Navbar from '../components/Navbar'
 const NotesPageLayout = (Component) => ({ ...props })=> {
     return (
         <>
-            <div className='grid grid-rows-3 grid-cols-5 gap-2 '>
-                <div className='col-span-1 row-span-3'>
+            <div className='grid grid-rows-3 grid-cols-5 sm:gap-0 gap-2 '>
+                <div className='col-span-1 row-span-3 hidden md:block '>
                     <Asidebar />
                 </div>
-                <div className='col-span-4 row-span-1'>
+                <div className='md:col-span-4 row-span-1 sm:row-span-1 col-span-5  '>
                     <Navbar />
                 </div>
-                <div className='col-span-4 row-span-2 p-3'>
+                <div className='sm:col-span-4 col-span-5 row-span-2 sm:p-3 p-1 '>
                     <Component {...props} />
 
                 </div>

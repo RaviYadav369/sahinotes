@@ -14,27 +14,25 @@ const OpenNotes = () => {
 
   return (
     <>
-      <nav className='flex '>
-        <div className='w-3/5 p-5 pb-0'>
-          <div className=' p-4 pb-0'>
+      <nav className=' md:flex block '>
+        <div className='md:w-3/5 w-full md:p-5 pb-0'>
+          <div className='p-1 md:p-4 pb-0'>
 
-            <h2 className='font-semibold text-2xl '>
+            <h2 className='font-semibold md:text-2xl '>
               <Link to='/notes'>
-                <IoIosArrowBack className='text-2xl font-semibold inline mr-4 mb-1' />
+                <IoIosArrowBack className='md:text-2xl text-sm font-semibold md:inline mr-4 mb-1' />
               </Link>
               {openNote.name} </h2>
           </div>
-          <div className='rounded-2xl h-screen mt-7 m-4 mb-0 p-2 pb-0 '>
+          <div className='rounded-2xl h-screen mt-7  md:m-4 mb-0 p-2 pb-0 '>
             <img src={openNote.notesImg} alt='notes Photo' className='h-full  w-full rounded-3xl' />
           </div>
 
         </div>
-        <div className='w-2/5 bg-gray-100 flex'>
-          <div className='w-1/12 pl-2 pr-2 items-center flex'><IoIosArrowForward /></div>
+        <div className='md:w-2/5 w-full bg-gray-100 flex'>
+          <div className='w-1/12 hidden pl-2 pr-2 items-center md:flex'><IoIosArrowForward /></div>
           <div className='w-auto'>
-
-
-            <div className='p-5 mt-4 flex justify-between w-3/5'>
+            <div className='p-5 mt-4 flex justify-between w-full md:w-3/5'>
               <p className='p-1 text-black'>
                 <BiLike className='text-2xl font-semibold text-black inline m-1 mb-1' />
                 {openNote.like} Likes
@@ -47,13 +45,13 @@ const OpenNotes = () => {
                 <BsThreeDotsVertical className='font-semibold inline text-2xl' />
               </p>
             </div>
-            <div className='flex mt-7'>
-              <div className='w-2/12 ml-5'>
+            <div className='flex mt-3 md:mt-7'>
+              <div className='w-2/12 ml-2 md:ml-5'>
                 <img src={openNote.authorImg} alt='aurthor Photo' className='h-12 w-12 rounded-full' />
               </div>
               <div className='w-2/4'>
-                <p className='font-semibold text-xl'>{openNote.author}</p>
-                <p>GPA 10</p>
+                <p className='font-semibold text-sm md:text-xl'>{openNote.author}</p>
+                <p className='text-sm'>GPA 10</p>
 
               </div>
               <div className='w-1/5'>
@@ -72,7 +70,7 @@ const OpenNotes = () => {
                 <img src={openNote.resourses} alt='Resourses Photo' className='h-32' />
                 <div className='w-3/4'>
                   <p className='font-semibold p-2 ml-2'>Wheeler's Dental Anatomy, Physiology and Occlusion, 1st South Asia Edition</p>
-                  <button className='bg-yellow-500 text-white p-2 ml-14 mt-2 items-center rounded-xl'>Buy on Amazon</button>
+                  <button className='bg-yellow-500 text-white p-2 ml-5 md:ml-14 mt-2 items-center rounded-xl'>Buy on Amazon</button>
                 </div>
               </div>
             </div>
