@@ -7,7 +7,7 @@ import {BsPlus} from 'react-icons/bs'
 const Asidebar = () => {
     return (
         <>
-            <div className='p-3 flex flex-col'>
+            <div className='p-3 flex flex-col '>
 
                 <div className='relative w-3/4 m-auto '>
 

@@ -42,7 +42,7 @@ const NotesCard = () => {
 
     return (
         <>
-            <div className='grid grid-rows-3 grid-cols-3 gap-3'>
+            <div className='grid grid-rows-2 grid-cols-3 gap-3'>
                 {note.map((each, index) => (
                     <Link to={`/opennotes/${each.id}`} key={index} >
                         <div className='p-3 border relative '>
