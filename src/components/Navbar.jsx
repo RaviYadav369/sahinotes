@@ -29,10 +29,10 @@ const Navbar = () => {
               <button className='bg-green-600 font-semibold text-black pl-2 pr-2 p-1 rounded  sm:p-2 sm:pl-5 sm:pr-5 mt-1'>Subscribe</button>
             </div>
           </div>
-          <div className='flex justify-between sm:justify-around w-full sm:w-3/5 nav'>
-            <NavLink to="/notes" className={({ isActive }) => (isActive ? 'active p-1 sm:p-2 w-1/3 sm:w-3/12 sm:mr-2  font-semibold flex justify-between' : 'inactive p-1 sm:p-2 w-1/3 sm:w-3/12 sm:mr-2  font-semibold flex justify-between')}>Notes <TbNumber4  className='bg-green-600 p-1 text-lg text-white mt-1' /></NavLink>
-            <NavLink to="/noteslist" className={({ isActive }) => (isActive ? 'active p-1 sm:p-2 w-2/5 sm:w-3/12 sm:mr-2  font-semibold flex justify-between' : 'inactive p-1 sm:p-2 w-2/5 sm:w-3/12 sm:mr-2  font-semibold flex justify-between')}>NotesList <TbNumber1 className='bg-gray-500 p-1 text-lg text-white mt-1' /></NavLink>
-            <NavLink to="/about" className={({ isActive }) => (isActive ? 'active p-1 sm:p-2 sm:w-3/12  sm:mr-2  font-semibold ' : 'inactive p-1 sm:p-2  sm:w-3/12 sm:mr-2  font-semibold ')}>About</NavLink>
+          <div className='flex justify-between sm:justify-around w-full md:w-4/5 lg:w-3/5 nav'>
+            <NavLink to="/notes" className={({ isActive }) => (isActive ? 'active p-1 sm:p-2 w-1/3 lg:w-3/12 sm:mr-2  font-semibold flex justify-between' : 'inactive p-1 sm:p-2 w-1/3 lg:w-3/12 sm:mr-2  font-semibold flex justify-between')}>Notes <TbNumber4  className='bg-green-600 p-1 text-lg text-white mt-1' /></NavLink>
+            <NavLink to="/noteslist" className={({ isActive }) => (isActive ? 'active p-1 sm:p-2 w-2/5 lg:w-3/12 sm:mr-2  font-semibold flex justify-between' : 'inactive p-1 sm:p-2 w-2/5 lg:w-3/12 sm:mr-2  font-semibold flex justify-between')}>NotesList <TbNumber1 className='bg-gray-500 p-1 text-lg text-white mt-1' /></NavLink>
+            <NavLink to="/about" className={({ isActive }) => (isActive ? 'active p-1 sm:p-2 lg:w-3/12  sm:mr-2  font-semibold ' : 'inactive p-1 sm:p-2  lg:w-3/12 sm:mr-2  font-semibold ')}>About</NavLink>
 
           </div>
         </div>
